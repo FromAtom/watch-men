@@ -1,4 +1,4 @@
-watch-men
+#watch-men
 
 研究室のファイルサーバの論文フォルダを監視して
 新しいPDFが追加されたらDropboxにコピーする。
