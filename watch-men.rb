@@ -9,14 +9,11 @@ COPY_TO = File.expand_path('~/Dropbox/watch-men')
 
 cd COPY_FROM
 
-loop do
-  Dir.glob("*.pdf").each do |file|
-    if File.exist?(File.join(COPY_TO, file))
-      # puts "'#{file} 'is exist."
-    else
-      cp(file, File.join(COPY_TO, file))
-      puts "Copy PDF -> '#{file}' [#{Time.now}]"
-    end
+Dir.glob("*.pdf").each do |file|
+  if File.exist?(File.join(COPY_TO, file))
+    # puts "'#{file} 'is exist."
+  else
+    cp(file, File.join(COPY_TO, file))
+    puts "Copy PDF -> '#{file}' [#{Time.now}]"
   end
-  sleep 10
 end
