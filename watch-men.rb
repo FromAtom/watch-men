@@ -15,7 +15,7 @@ loop do
       # puts "'#{file} 'is exist."
     else
       cp(file, File.join(COPY_TO, file))
-      puts "Copy done --> '#{file}' [#{Time.now}]"
+      puts "Copy PDF -> '#{file}' [#{Time.now}]"
     end
   end
   sleep 10
