@@ -1,4 +1,10 @@
 #watch-men
+Watching directory on local server and copy files to Dropbox when find new one.
 
-研究室のローカルファイルサーバ内の論文フォルダを監視して
-新しい論文ファイル(PDF)が追加されたらDropboxにコピーする。
+
+##Usage
+```
+$ git clone git@github.com:FromAtom/watch-men.git
+$ cd watch-men
+$ whenever --update-crontab
+```
